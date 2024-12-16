@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/agendamento.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <title>Salão Senac - Serviço x</title>
     <style>
         /* Estilo para o contêiner do funcionário */
@@ -17,25 +15,20 @@
             padding: 15px;
             margin: 10px 0;
             background-color: #f9f9f9;
-            text-align: center;
-            /* Centraliza o conteúdo */
+            text-align: center; /* Centraliza o conteúdo */
         }
 
         /* Estilo para a seção de avaliação */
         .employee-rating {
             display: flex;
             align-items: center;
-            justify-content: center;
-            /* Centraliza a avaliação */
+            justify-content: center; /* Centraliza a avaliação */
             margin: 10px 0;
         }
-
         .employee-rating i {
             color: gold;
-            margin-right: 5px;
-            /* Espaço entre estrela e a nota */
+            margin-right: 5px; /* Espaço entre estrela e a nota */
         }
-
         .employee-rating span {
             font-weight: bold;
         }
@@ -51,58 +44,59 @@
 
         /* Estilo para o contêiner da equipe */
         .team-container {
-            display: flex;
-            /* Ativa o flexbox para alinhar lado a lado */
-            justify-content: space-between;
-            /* Espaçamento entre os blocos */
-            align-items: flex-start;
-            /* Alinha os itens ao topo */
+            display: flex; /* Ativa o flexbox para alinhar lado a lado */
+            justify-content: space-between; /* Espaçamento entre os blocos */
+            align-items: flex-start; /* Alinha os itens ao topo */
         }
 
         /* Estilo para os trabalhos do funcionário */
         .work-gallery {
-            flex: 1;
-            /* Permite que esta seção ocupe mais espaço */
-            margin-left: 20px;
-            /* Espaço entre os blocos */
+            flex: 1; /* Permite que esta seção ocupe mais espaço */
+            margin-left: 20px; /* Espaço entre os blocos */
         }
-
         .work-gallery h3 {
-            text-align: right;
-            /* Alinha o título à direita */
-            margin-bottom: 10px;
-            /* Espaço abaixo do título */
+            text-align: right; /* Alinha o título à direita */
+            margin-bottom: 10px; /* Espaço abaixo do título */
         }
-
         .work-gallery-container {
-            display: grid;
-            /* Flexbox para a galeria de trabalhos */
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            /* Cria uma grid responsiva */
-            gap: 10px;
-            /* Espaçamento entre as fotos */
+            display: grid; /* Flexbox para a galeria de trabalhos */
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Cria uma grid responsiva */
+            gap: 10px; /* Espaçamento entre as fotos */
         }
-
         .work-gallery figure {
-            margin: 0;
-            /* Remove margem padrão */
-            text-align: center;
-            /* Centraliza o texto */
+            margin: 0; /* Remove margem padrão */
+            text-align: center; /* Centraliza o texto */
         }
-
         .work-gallery img {
-            width: 100%;
-            /* Largura das imagens 100% do espaço do contêiner */
-            height: auto;
-            /* Altura automática para manter a proporção */
-            border-radius: 5px;
-            /* Bordas arredondadas */
-            object-fit: cover;
-            /* Ajusta a imagem dentro do espaço */
+            width: 100%; /* Largura das imagens 100% do espaço do contêiner */
+            height: auto; /* Altura automática para manter a proporção */
+            border-radius: 5px; /* Bordas arredondadas */
+            object-fit: cover; /* Ajusta a imagem dentro do espaço */
         }
+        .social-icons .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.5rem;
+            width: 3.5rem;
+            background-color: #495057;
+            color: #fff;
+            border-radius: 100%;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            }
+            .social-icons .social-icon:last-child {
+            margin-right: 0;
+            }
+            .social-icons .social-icon:hover {
+            background-color: #00809380;
+            }
+
+            .dev-icons {
+            font-size: 3rem;
+            }
     </style>
 </head>
-
 <body>
     <!-- <header>
         <h1>Salão Senac</h1>
@@ -111,7 +105,7 @@
         </div>
     </header> -->
 
-    <nav class="navbar navbar-expand-lg">
+       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../clientes/agendamentos/logo-white.png" alt="Logo do Salão" width="80" height="50"
@@ -133,9 +127,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="salaojw.html">Serviços</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="feedback.html">Feedback</a>
-                    </li>
                 </ul>
                 <a href="login.html">
                     <input class="btn btn-primary" type="submit" value="Cadastro">
@@ -143,6 +134,7 @@
             </div>
         </div>
     </nav>
+    
 
     <main>
         <section class="service-info">
@@ -151,8 +143,8 @@
         </section>
 
         <section class="calendar-container">
-            <h3>Escolha o seu horário</h3>
-            <div class="calendar" id="calendar"></div>
+            <h3>Escolha o seu horário:</h3>
+            <div class="calendar"id="calendar"></div>
             <div class="form-group">
                 <input type="date" id="appointmentDate" name="appointmentDate" required>
             </div>
@@ -168,7 +160,7 @@
         </section>
 
         <section class="team" id="team-info" style="display: block;">
-            <h3>Indisponível no horário selecionado:</h3>
+            <h3>Seu Profissional Favorito:</h3>
             <div class="team-container">
                 <div class="team-members">
                     <div class="team-member">
@@ -180,31 +172,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="work-gallery">
-                    <h3>Trabalhos do Funcionário:</h3>
-                    <div class="work-gallery-container">
-
-                        <figure>
-                            <img src="agendamentos/blundt-cut1.jpg" alt="Trabalho 1">
-                            <figcaption>Corte: Blundt Cut</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="agendamentos/cabelo-repicado2.jpg" alt="Trabalho 2">
-                            <figcaption>Corte: Cabelo Repicado</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="agendamentos/chanel-de-bico4.jpg" alt="Trabalho 3">
-                            <figcaption>Corte: Chanel De Bico</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="agendamentos/frenchbob3.jpg" alt="Trabalho 4">
-                            <figcaption>Corte: French Bob</figcaption>
-                        </figure>
-
-                    </div>
-                </div>
+            </section>
+            
+        <section class="team"  id="team-info" style="display: block;">
+            <h3>Trabalhos do Profissional:</h3>
+            <br>
+        <div class="work-gallery" >
+            <div  class="work-gallery-container">
+                         
+                <figure>
+                    <img src="agendamentos/blundt-cut1.jpg" alt="Trabalho 1">
+                    <figcaption>Corte: Blundt Cut</figcaption>
+                </figure>
+                <figure>
+                    <img src="agendamentos/cabelo-repicado2.jpg" alt="Trabalho 2">
+                    <figcaption>Corte: Cabelo Repicado</figcaption>
+                </figure>
+                <figure>
+                    <img src="agendamentos/chanel-de-bico4.jpg" alt="Trabalho 3">
+                    <figcaption>Corte: Chanel De Bico</figcaption>
+                </figure>
+                <figure>
+                    <img src="agendamentos/frenchbob3.jpg" alt="Trabalho 4">
+                    <figcaption>Corte: French Bob</figcaption>
+                </figure>
+        </div>    
             </div>
-
+        </section>
+            
             <div class="user-review">
                 <h4>Avalie o Funcionário</h4>
                 <form id="review-form">
@@ -219,11 +214,12 @@
                             <option value="5">5 Estrelas</option>
                         </select>
                     </div>
+                    <br>
                     <button type="submit">Enviar Avaliação</button>
                 </form>
             </div>
         </section>
-
+        
         <footer>
             <div class="footer-content">
                 <div class="services-footer">
@@ -252,10 +248,11 @@
             </div>
             <div class="redes-footer">
                 <p>Nossas redes sociais</p>
+              
             </div>
         </footer>
     </main>
-
+    
     <script src="script/agendamento.js"></script>
     <script>
         // Captura o nome do funcionário da URL
@@ -271,15 +268,14 @@
         document.getElementById('employee-rating').textContent = employeeRating;
 
         // Lógica para enviar a avaliação do usuário
-        document.getElementById('review-form').addEventListener('submit', function (event) {
+        document.getElementById('review-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const comment = document.getElementById('user-comment').value;
             const rating = document.getElementById('user-rating').value;
             alert(`Obrigado pela sua avaliação!`);
             // Aqui você pode adicionar a lógica para enviar os dados para o servidor
         });
-
+        
     </script>
 </body>
-
 </html>
